@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Alpine Plugins -->
+  <script defer src="https://unpkg.com/@alpinejs/mask@3.x.x/dist/cdn.min.js"></script>
+  <!-- Alpine Core -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="ico.css">
+  <style type="text/css">
+  	.button {
+  		background-image: linear-gradient(#E1321D, #CF200B); 
+  		display: inline; 
+  		padding: 10px; 
+  		color: white; 
+  		border-radius: 5px;
+  		box-shadow: 0px 0px 15px black;
+  	}
+
+  	body {
+  		color: white;
+  		background-color: #BA261C;
+  	}
+
+  	.input {
+  		margin-top: 10px;
+  		padding: 5px;
+  		border-radius: 5px;
+  		box-shadow: 0px 0px 10px black;
+  		color: gray;
+  		background: white;
+  	}
+
+  	.title {
+  		text-shadow: 3px 3px 7px black;
+  	}
+  </style>
+</head>
+<body>
+  <div class="container mx-auto w-3/4 mt-5">
+  	
+  	<img src="logo.jpg">
+  	<h1 class="font-sans mt-5 md:text-[30px] title">
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  	</h1>
+  	
+  	<div class="md:columns-2 relative">
+  		<img class="" src="car.jpg" />
+  		<img class="md:absolute inset-x-[60%] bottom-0 " src="right.jpg" />
+	</div>
+
+	<div class="md:columns-1 lg:columns-1 text-justify mt-5">
+		<p class="md:w-[100%] lg:w-[50%]">
+  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  		</p>
+	</div>
+  	
+  	<div style="text-align: center;" class="mt-20 mb-20">
+  		<a href="#" class="button">
+  			<span class="icon-file-text2"></span>
+  			VER O REGULAMENTO
+  		</a>
+  	</div>
+
+  	<div>
+  		<div class="md:p-10 p-5 float-left md:w-1/2 bg-[#A30F05] rounded">
+  			<h2 class="text-[20px]">
+  				Regulamento <br>
+  				vitae leo vel elit molestie molestie
+  			</h2>
+  			<br>
+  			<p>
+	  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  			</p>
+  			<br>
+  			<p>
+  				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  			</p>
+  		</div>
+  		<div class="float-right md:w-1/2 md:p-10">
+  			<h2 class="text-[20px]">
+  				FALE CONOSCO:
+  			</h2> <br>
+  			<form>
+  				<input type="" name="" class="input w-full" placeholder="seu nome">
+  				<input type="" name="" class="input w-full" placeholder="seu e-mail">
+  				<input x-data x-mask="999.999.999-99" class="input w-[48%] float-left"  placeholder="CPF">
+  				<input x-data x-mask="9999-999-999" class="input w-[48%] float-left clear-both" placeholder="telefone">
+  				<input x-data x-mask="9999-999-999" class="input w-[48%] float-right" placeholder="celular">
+  				<select  class="input clear-both w-full">
+  					<option>
+  						Escolha a concessioária
+  					</option>
+  				</select>
+  				<textarea class="w-full input" rows="5" placeholder="Sua mensagem"></textarea>
+  				<div style="text-align: right;" class="mt-5">
+			  		<a href="#" class="button">
+			  			ENVIAR
+			  		</a>
+  				</div>
+  			</form>
+  		</div>
+	</div>
+
+  </div>
+</body>
+</html>

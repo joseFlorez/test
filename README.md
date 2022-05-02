@@ -1,0 +1,3 @@
+- alpinejs
+- tailwind
+- alpinejs/mask
